@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+<title>socket.io testing</title>
+
+<script src="http://htilford.com:81/javascripts/socket.io.js"></script>
+
+<script>
+  var socket = io.connect();
+  socket.on('news', function(news) {
+     alert(news); 
+  });
+</script>
